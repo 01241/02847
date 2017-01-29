@@ -7,6 +7,9 @@ Links, Material Arduino Beginners and useful Links for the makezurich Hackathon 
 * Article (assembly): https://learn.sparkfun.com/tutorials/using-the-arduino-pro-mini-33v#assembly
 * Schema: https://cdn.sparkfun.com/datasheets/Dev/Arduino/Boards/ProMini8MHzv1.pdf
 
+*** ToDo
+-> Change 3V / 5V at Arduino
+
 ## FTDI
 * FTDI Basic Breakout - 3.3V: https://www.sparkfun.com/products/retired/8772
 * FTDI USB VCP Driver / Windows Operating Systems: https://www.valley-ent.com/store/ftdi-usb-vcp-driver.html

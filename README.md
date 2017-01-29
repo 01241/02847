@@ -17,7 +17,8 @@ Links, Material Arduino Beginners and useful Links for the makezurich Hackathon 
 * CP210x USB to UART Bridge VCP Drivers: http://www.silabs.com/products/mcu/Pages/USBtoUARTBridgeVCPDrivers.aspx
 * CP2102 EVALUATION KIT USER ’S GUIDE: http://www.silabs.com/support%20documents/technicaldocs/cp2102-ek.pdf
 
-
+## LoraWAN
+* LoRa breakout board for RN2483 and Arduino Pro Mini 3.3V: http://blog.smartcityzen.it/lora-breakout-board-for-rn2483-and-arduino-pro-mini-3-3v/?lang=en
 
 
 # Inspiration

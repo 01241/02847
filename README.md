@@ -19,6 +19,7 @@ Links, Material Arduino Beginners and useful Links for the makezurich Hackathon 
 
 ## LoraWAN
 * LoRa breakout board for RN2483 and Arduino Pro Mini 3.3V: http://blog.smartcityzen.it/lora-breakout-board-for-rn2483-and-arduino-pro-mini-3-3v/?lang=en
+* Steps to connect to TheThingsnetwork with simple LoRaWAN setup: https://sites.google.com/site/connecttottn/
 
 
 # Inspiration

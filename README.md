@@ -1,4 +1,4 @@
-# 02847
+# Makezurich Hackathon
 Links, Material Arduino Beginners and useful Links for the makezurich Hackathon 2017 (https://makezurich.ch/)
 
 ## Using the Arduino Pro Mini 3.3V

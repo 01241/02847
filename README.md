@@ -24,8 +24,14 @@ Links, Material Arduino Beginners and useful Links for the makezurich Hackathon 
 # Inspiration
 ## Bluetooth
 * Bluetooth Low Energy (BLE) Integration: http://www.link-labs.com/ble-integration
+* SparkFun Bluetooth Modem - BlueSMiRF Gold: https://www.sparkfun.com/products/12582
 
-## Divers
+## Box Content
+### Arduino HC-SR501 Motion Sensor
+* Tutorial 1: http://henrysbench.capnfatz.com/henrys-bench/arduino-sensors-and-input/arduino-hc-sr501-motion-sensor-tutorial/
+* Tutorial 2: https://www.mysensors.org/build/motion
+
+## Diverses, Konzept
 * LoRa Localization (That’s great, but geolocation is still the killer LoRa app.): http://www.link-labs.com/blog/lora-localization
 * Real-time location tracking: https://www.airfinder.com/
 

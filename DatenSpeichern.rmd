@@ -1,0 +1,47 @@
+## Daten speichern
+
+
+Keller Druck hat ja eine Story auf der Things-Website:
+https://www.thethingsnetwork.org/labs/story/pressure-manometer-node-shows-live-data-on-a-website-1
+
+
+
+
+
+Guten Tag Herr Steiger
+ 
+Ich habe die besagte Lösung implementiert.
+Das Verwenden von Google Spreadsheet hab ich gewählt, weil ich aus Zeitgründen keine komplette Cloud-Lösung und Datenbank einrichten wollte.
+Das ganze hab ich in relativ kurzer Zeit gemacht.
+ 
+Die Lösung basiert auf folgenden Teilen:
+1)     Das Gerät funktioniert und kommuniziert mit TTN
+2)     Man kann sich mit MQTT direkt bei TTN verbinden und auf neue Nachrichten abholen. Ich habe diesen Guide verwendet: https://sandervandevelde.wordpress.com/2016/07/09/access-the-things-network-telemetry-using-c-m2mqtt/
+3)     Obenstehende Funktion ist in einem C#-Programm, welches auf einem Rechner nonstop lief.
+4)     Dieses Programm macht dann sobald eine Nachricht empfangen wurde folgendes:
+a.     Es wandelt die Nachricht um in einen lesbaren JSON-string
+b.    Diesen String wird wiederum in ein Lora-Objekt umgewandelt. So habe ich Zugriff auf meine einzelnen Werte
+c.     Nachdem ich die interessanten Werte herausgelesen habe, lade ich diese Werte rauf auf ein Google Spreadsheet.
+5)     Dieses Raufladen zu Google Spreadsheet ist nicht so kompliziert wie es tönt. Google hat da eine bequeme API mit Beispielen: https://developers.google.com/sheets/api/guides/concepts
+a.     Man kann da verschiedene Programmiersprachen benutzen.
+b.    Weil ich das Programm in C# hab ich die .NET API verwendet.
+c.     Die Logik ist:
+                                          i.    Die ganze Liste laden vom Spreadsheet
+                                         ii.    Wenn die Liste grösser als z.B. 500 Einträge hat, dann lösche den ältesten Eintrag
+                                        iii.    Füge die Werte der neuen Nachricht hinzu
+                                        iv.    Upload diese Liste zum google spreadsheet
+6)     Das haben sie ja selber gesehen: Im Spreadsheet selber kann man Diagramme erstellen wie bei Excel und dann via IFrame exportieren und in HTML anzeigen
+ 
+Leider ist die Aktualisierung von der Grafik nicht so schnell. Es dauert also etwa 1-5 Minuten bis die Grafik/Werte aktualisiert angezeigt werden. Wir konnten aber gut damit leben für ein Proof-of-Concept.
+ 
+Wenn sie wollen, kann ich meine Source auf Github veröffentlichen. Das Programm funktioniert aber nicht mehr, weil TTN die Staging-Umgebung  https://staging.thethingsnetwork.org/ ersetzt hat mit der neuen console.thethingsnetwork.org. Ich denke aber, dass der MQTT Zugriff ähnlich funktioniert.
+
+Freundliche Grüsse
+
+Sebastian Mojado
+Software Engineer
+
+KELLER AG für Druckmesstechnik
+8404 Winterthur / Switzerland
+Tel. +41 (0)52 235 86 80
+www.keller-druck.com

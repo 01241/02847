@@ -1,0 +1,8 @@
+http://forum.arduino.cc/index.php?topic=356461.msg2459790#msg2459790
+
+
+if ((topSensorState == ACTIVE) or (bottomSensorState == ACTIVE))
+
+Should probably be:
+
+if ((topSensorState == ACTIVE) || (bottomSensorState == ACTIVE))

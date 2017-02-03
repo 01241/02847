@@ -1,19 +1,33 @@
 # 0-1-Box
 
+## Challenge
+Board with two Motion Sensors.
+Use: Send the data from the activated sensor to a website and visualize it. (Example: poll) YES|NO
+Thats it! Sounds simple, but...
+
+### Inspiration
+#### Motion Sensor Tutorials and Links
+
+* **Good Basics**: Arduino HC-SR501 Motion Sensor Tutorial: http://henrysbench.capnfatz.com/henrys-bench/arduino-sensors-and-input/arduino-hc-sr501-motion-sensor-tutorial/#attachment wp-att-2142/0/
+* **Good, with additional links**: PIR Motion Sensor HC-SR501: http://www.bitstoc.com/index.php?route=product/product&product_id=59
+* Motion Tracker with PIRs: http://www.instructables.com/id/Motion-Tracker-with-PIR-Arduino-and-a-Servo/
+* Arduino – (Very) Basic motion tracking with 2 PIR sensors: http://luckylarry.co.uk/arduino-projects/arduino-very-basic-motion-tracking-with-2-pir-sensors/
+* Re: multiple pir sensors on the same bord: http://forum.arduino.cc/index.php?topic=327740.0
+* PIR Sensor (Part 2): http://arduinobasics.blogspot.ch/2013/12/pir-sensor-part-2.html
+* Playground.arduino - PIRsense code: http://playground.arduino.cc/Code/PIRsense#.Uzr77vmSzft
+
+### Buttons (for worst case)
+* Buttons: http://playground.arduino.cc/Code/Buttons    :(
 
 
 
 
-Demo
 
-
-
-
-### Formating
+### Doku Formating Test
 #### Table and Links
 | Column Title | Column Title | Column Title |
 | :-------- | :-------- | :------------------------- |
-| **Bold** | Hello | [_Link_](http://www.01241.com) |
+| **Bold** | Hello | [_Link_](https://now.makezurich.ch/) |
 | Lorem | Ipsum | Text |
 
 
@@ -21,10 +35,3 @@ Demo
 ## Lizenz
 
 MIT License (MIT)
-
-## Contact
-
-Markus Steiger
-
-* Website: [_01241.com_](http://www.01241.com)
-* Twitter: [_@01241_](https://twitter.com/01241)

@@ -1,12 +1,9 @@
 ## Daten speichern
 
+#### Antwort auf meine Anfrage an Keller-Druck betreffend dieser Lösung. Vorallem betreffend Datenspeicherug
 
-Keller Druck hat ja eine Story auf der Things-Website:
+Keller Druck Story auf der Things-Website:
 https://www.thethingsnetwork.org/labs/story/pressure-manometer-node-shows-live-data-on-a-website-1
-
-
-
-
 
 Guten Tag Herr Steiger
  
@@ -27,11 +24,11 @@ Die Lösung basiert auf folgenden Teilen:
 * a.     Man kann da verschiedene Programmiersprachen benutzen.
 * b.    Weil ich das Programm in C# hab ich die .NET API verwendet.
 * c.     Die Logik ist:
-                                          i.    Die ganze Liste laden vom Spreadsheet
-                                         ii.    Wenn die Liste grösser als z.B. 500 Einträge hat, dann lösche den ältesten Eintrag
-                                        iii.    Füge die Werte der neuen Nachricht hinzu
-                                        iv.    Upload diese Liste zum google spreadsheet
-6)     Das haben sie ja selber gesehen: Im Spreadsheet selber kann man Diagramme erstellen wie bei Excel und dann via IFrame exportieren und in HTML anzeigen
+*                                          i.    Die ganze Liste laden vom Spreadsheet
+*                                         ii.    Wenn die Liste grösser als z.B. 500 Einträge hat, dann lösche den ältesten Eintrag
+*                                        iii.    Füge die Werte der neuen Nachricht hinzu
+*                                        iv.    Upload diese Liste zum google spreadsheet
+* 6)     Das haben sie ja selber gesehen: Im Spreadsheet selber kann man Diagramme erstellen wie bei Excel und dann via IFrame exportieren und in HTML anzeigen
  
 Leider ist die Aktualisierung von der Grafik nicht so schnell. Es dauert also etwa 1-5 Minuten bis die Grafik/Werte aktualisiert angezeigt werden. Wir konnten aber gut damit leben für ein Proof-of-Concept.
  

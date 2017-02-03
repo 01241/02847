@@ -1,4 +1,4 @@
-http://forum.arduino.cc/index.php?topic=356461.msg2459790#msg2459790
+<a href="http://forum.arduino.cc/index.php?topic=356461.msg2459790#msg2459790">2 pir sensor</a>
 
 
 if ((topSensorState == ACTIVE) or (bottomSensorState == ACTIVE))

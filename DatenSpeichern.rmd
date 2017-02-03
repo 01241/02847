@@ -5,8 +5,10 @@
 Keller Druck Story auf der Things-Website:
 https://www.thethingsnetwork.org/labs/story/pressure-manometer-node-shows-live-data-on-a-website-1
 
+
+-------------------------------
 Guten Tag Herr Steiger
- 
+
 Ich habe die besagte Lösung implementiert.
 Das Verwenden von Google Spreadsheet hab ich gewählt, weil ich aus Zeitgründen keine komplette Cloud-Lösung und Datenbank einrichten wollte.
 
@@ -39,7 +41,8 @@ Freundliche Grüsse
 Sebastian Mojado
 Software Engineer
 
+----------------------------------------
 KELLER AG für Druckmesstechnik
 8404 Winterthur / Switzerland
-Tel. +41 (0)52 235 86 80
 www.keller-druck.com
+

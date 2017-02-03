@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+
+    <meta charset="utf-8">
+    <title>02847</title>
+
+    <meta name="viewport" content="user-scalable=yes, initial-scale=1.0, maximum-scale=4.0, width=device-width, height=device-height">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <script src='library/js/socket.io.js'></script>
+    <script src='library/js/moment.min.js'></script>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
+    <script src="library/js/apploader.js"></script>
+
+    <link rel="stylesheet" href="library/css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:900,700,400' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+
+<div id="loadingmask" class="display-table">
+    <div class="display-table-cell" style="">
+        <img width="32" height="32" alt="page-loader" src="library/css/page-loader.gif">
+        <p class="small">L O A D I N G</p>
+    </div>
+</div>
+
+<div id="meta-header-2017">
+    <div class="height-inherit table-center-wrap display-none">
+        <a href="http://01241.com" rel="nofollow" target="_blank" title="open Site: 01241.com" id="meta-logo" class="table-center">
+            <img src="library/css/logo01241_white.png" alt="Logo Markus Steiger 01241.com">
+        </a>
+    </div>
+</div>
+
+
+
+<div id="header" global-header>
+
+    <div class="height-inherit table-center-wrap float-left">
+        <h1 class="table-center">02847</h1>
+    </div>
+
+    <div id="header-nav" class="height-inherit">
+
+        <div class="float-left height-inherit table-center-wrap display-none">
+            <a id="settings-nav" class="nav-link top-link table-center highlightable" aria-label="Settings">
+                <div class="flag-image">
+                    <div class="btn-icon rounded">
+                        <i class="material-icons">&#xE8B8;</i>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="float-left height-inherit table-center-wrap">
+            <a id="about-nav" class="nav-link top-link table-center highlightable" aria-label="About Project">
+                <div class="flag-image">
+                    <div class="btn-icon rounded">
+                        <i id="open-about" class="material-icons">&#xE88F;</i>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+    </div>  <!-- end #header-nav -->
+
+</div> <!-- end #header -->
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="page-wrapper">
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--  DIALOG Layer ABOUT MESSAGE -->
+<div id="dialog-about" class="dialog-window display-none">
+
+    <div class="dialog-header">
+        <div class="float-right height-inherit table-center-wrap">
+            <a id="close-dialog-about" class="nav-link table-center highlightable" aria-label="Close Window">
+                <div class="btn-icon close grey">
+                    <i class="material-icons">&#xE5CD;</i>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div class="dialog-content">
+        <h2>About</h2>
+        <p>Lorem</p>
+        <h3>Credits</h3>
+        <p>Dataimport based on the <b>microclient</b>,
+            built by <a target="_blank" href="https://twitter.com/gnz">Gonzalo Casas</a> &amp; <a target="_blank" href="https://github.com/h0l0gram/">Jan Hänsli</a><br>
+            <a target="_blank" href="https://github.com/gonzalocasas/ttn-microclient">Source on GitHub</a></p>
+        <p>© 2016, Markus Steiger<br><a href='http://01241.com'>01241.com</a></p>
+    </div>
+
+</div>
+<!--  end DIALOG Layer ABOUT MESSAGE -->
+
+<!--  DIALOG Layer SETTINGS -->
+<div id="dialog-settings" class="dialog-window display-none">
+
+    <div class="dialog-header">
+        <div class="float-right height-inherit table-center-wrap">
+            <a id="close-dialog-settings" class="nav-link table-center highlightable" aria-label="Close Window">
+                <div class="btn-icon close grey">
+                    <i class="material-icons">&#xE5CD;</i>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div class="dialog-content">
+
+        <h2>Settings</h2>
+
+        <div class="settings-session">
+            <h3>Filters</h3>
+
+        </div>
+
+        <div class="settings-session top-15">
+            <h3 class="display-nonex">Options</h3>
+            <ul id="options-function">
+                <li>
+                    <div id="options-markers" class="checkbox table-center-wrap" name="option1">
+                        <i class="material-icons table-center">&#xE835;</i><i class="material-icons active table-center">&#xE834;</i>
+                        <span class="checkbox-label table-center">Click 1</span>
+                    </div>
+                </li>
+                <li>
+                    <div id="options-day-indicator" class="checkbox table-center-wrap" name="option2">
+                        <i class="material-icons table-center">&#xE835;</i><i class="material-icons active table-center">&#xE834;</i>
+                        <span class="checkbox-label table-center">Click 2</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+</div>
+<!--  end DIALOG Layer SETTINGS -->
+
+
+
+
+
+
+
+<script>
+
+    // https://gist.github.com/anandgeorge/2814934
+    // http://code.runnable.com/UTlPMV-f2W1TAAAu/sending-and-receiving-events-with-socket-io
+    // http://code.runnable.com/UTlPM1-f2W1TAABh/storing-data-associated-to-client-for-socket-io    SAVE Data
+    // https://groups.google.com/forum/#!topic/mongoose-orm/MSUpZrjPNb8    SAVE DATA
+
+
+    var socket = io('/');
+    // var socket = io('https://markussteiger.ch/projekte/02847/');
+
+    var addCard = function(message, data) {
+        // Create a new DOM elements
+        var newCard = document.createElement('li');
+        newCard.classList.add('card', 'drop-shadow');
+
+        var cardTitle = document.createElement('p');
+        cardTitle.classList.add('message');
+        cardTitle.innerText = message;
+        newCard.appendChild(cardTitle);
+
+        var cardTime = document.createElement('p');
+        cardTime.classList.add('message-time');
+        cardTime.innerText = moment().format('HH:mm');
+        newCard.appendChild(cardTime);
+
+        if (data) {
+            var fields = document.createElement('dl');
+            newCard.appendChild(fields);
+
+            for (var i in data) {
+                var fieldName = document.createElement('dt');
+                fieldName.innerText = i;
+
+                var fieldValue = document.createElement('dd');
+                fieldValue.innerText = data[i];
+
+                fields.appendChild(fieldName);
+                fields.appendChild(fieldValue);
+            }
+
+        }
+
+        // Append to the activity feed
+        var feed = document.querySelector('.feed');
+        feed.insertBefore(newCard, feed.firstChild);
+    };
+
+            // App Identification
+    var yourappId = "01241makezurich";
+    var youraccessKey = "70B997D426B04CAFF1EAE32048FC94BB";
+    var yourregion = "eu";
+
+    /*
+     const char *devAddr = "26011644";
+     const char *nwkSKey = "0CE24D13CBB945BCBAC8526EAC3F8644";
+     const char *appSKey = "70B997D426B04CAFF1EAE32048FC94BB";
+     */
+
+    /* Uncomment to start
+    window.onload = function() {
+        socket.emit('start', { appId: yourappId, accessKey: youraccessKey, region: yourregion });
+    };
+    */
+
+    /* Not used
+    document.querySelector('.button-clear').addEventListener('click', function(event) {
+        document.querySelector('.feed').innerHTML = '';
+    });
+    */
+
+
+
+
+    socket.on('ttn-connect', function (data) {
+        addCard('Connection successful');
+    });
+
+    socket.on('ttn-error', function (data) {
+        addCard('Error', data);
+    });
+
+
+
+
+    socket.on('uplink', function (data) {
+        //console.log(data);
+        //console.dir(data);
+
+        var details = {
+            time: moment(new Date(data.metadata.time)).format('MMM Do, HH:mm'),
+            dev_id: data.dev_id,
+            counter: data.counter,
+            gateways: data.metadata.gateways.map(function(gw) { return gw.gtw_id; }).join(', '),
+            rssi: data.metadata.gateways.map(function(gw) { return gw.rssi; }).join(', '),
+            snr: data.metadata.gateways.map(function(gw) { return gw.snr; }).join(', '),
+            frequency: data.metadata.frequency,
+            data_rate: data.metadata.data_rate
+        };
+
+        // Try to decode base64 to plain
+        if (data.payload_raw) {
+            try {
+                var decoded = String.fromCharCode.apply(null, new Uint8Array(data.payload_raw));
+                //fields.payload = payload.join(' ').toUpperCase();
+                details.payload_plain = decoded;
+            } catch(e) {
+                console.log(e);}
+        }
+
+        addCard('Uplink received', details);
+    });
+
+    socket.on('activation', function (data) {
+        addCard('Device activated', { devEUI: data.devEUI });
+    });
+</script>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

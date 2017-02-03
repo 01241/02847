@@ -1,10 +1,12 @@
 ## Daten speichern
 
-#### Antwort auf meine Anfrage an Keller-Druck betreffend dieser Lösung. Vorallem betreffend Datenspeicherug
+#### Antwort auf meine Anfrage an Keller-Druck betreffend dieser Lösung:
 
 Keller Druck Story auf der Things-Website:
 https://www.thethingsnetwork.org/labs/story/pressure-manometer-node-shows-live-data-on-a-website-1
 
+
+Vorallem bezüglich Datenspeicherug.
 
 -------------------------------
 Guten Tag Herr Steiger

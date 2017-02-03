@@ -1,9 +1,12 @@
 # 0-1-Box
 
-## Challenge
-Board with two Motion Sensors.
-Use: Send the data from the activated sensor to a website and visualize it. (Example: poll) YES|NO
-Thats it! Sounds simple, but...
+Sounds simple: Board with two Motion Sensors.
+"Use case": Mobile pollbox YES|NO
+
+## Objective:
+* Send the impuls from the activated sensor to a website via LoraWAN
+* Save the data in GoogleSpreadsheet
+* Visualization
 
 ### Inspiration
 #### Motion Sensor Tutorials and Links
@@ -18,7 +21,6 @@ Thats it! Sounds simple, but...
 
 ### Buttons (for worst case)
 * Buttons: http://playground.arduino.cc/Code/Buttons    :(
-
 
 ## Arduino
 * **Language Reference**: https://www.arduino.cc/en/Reference/HomePage

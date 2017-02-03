@@ -27,15 +27,5 @@ Thats it! Sounds simple, but...
 
 
 
-### Doku Formating Test
-#### Table and Links
-| Column Title | Column Title | Column Title |
-| :-------- | :-------- | :------------------------- |
-| **Bold** | Hello | [_Link_](https://now.makezurich.ch/) |
-| Lorem | Ipsum | Text |
 
 
-
-## Lizenz
-
-MIT License (MIT)
